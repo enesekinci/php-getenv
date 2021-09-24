@@ -1,6 +1,6 @@
 <?php
 
-namespace EnesEKINCI\GetEnv\Exception;
+namespace EnesEkinci\GetEnv\Exception;
 
 use Exception;
 

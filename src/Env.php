@@ -1,10 +1,10 @@
 <?php
 
-namespace EnesEKINCI\GetEnv;
+namespace EnesEkinci\GetEnv;
 
-use EnesEKINCI\GetEnv\Exception\NotFoundEnvFile;
+use EnesEkinci\GetEnv\Exception\NotFoundEnvFile;
 
-final class Config
+final class Env
 {
     private static $instance;
     public static $filePath;
@@ -20,7 +20,7 @@ final class Config
         $this->setting = $this->generateENV($content);
     }
 
-    public function run(string $filePath)
+    public static function run(string $filePath)
     {
         self::$filePath = $filePath;
         self::instance();
@@ -29,7 +29,7 @@ final class Config
     private static function instance()
     {
         if (null === self::$instance)
-            self::$instance = new Config();
+            self::$instance = new Env();
         return self::$instance;
     }
 
