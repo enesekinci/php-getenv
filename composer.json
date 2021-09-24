@@ -1,0 +1,24 @@
+{
+    "name": "enesekinci/php-getenv",
+    "description": "Loads environment variables from .env file",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "EnesEKINCI\\GetEnv\\": "src/"
+        },
+        "files": [
+            "src/Helper/functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "enesekinci",
+            "email": "enes.eknc.96@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0"
+    }
+}
