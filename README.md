@@ -7,7 +7,7 @@
 
 require_once "vendor/autoload.php";
 
-use EnesEkinci\GetEnv\Config;
+use EnesEkinci\GetEnv\Env as Config;
 
 $file_env = __DIR__ . '/' . '.env';
 
