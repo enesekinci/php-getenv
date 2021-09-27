@@ -56,7 +56,7 @@ final class Env
         foreach ($fields as $field) {
             $val = (array) $field;
             foreach ($val as $k => $v) {
-                if (false === strpos($k, '#'))
+                if (false !== strpos($k, '#'))
                     continue;
 
                 $k = trim($k);
