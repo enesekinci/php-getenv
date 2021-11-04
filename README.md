@@ -1,5 +1,7 @@
 # php-getenv
 
+## composer require enesekinci/php-getenv
+
 # Loads environment variables from .env file
 
 ```php
